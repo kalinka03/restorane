@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-1.6.4.min.js"></script>
+    <script src="jquery-ui.js"></script>
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="lessons4.js">
+	</script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style/style2.css">
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="style/fonts.css">
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+		$(function(){
+$('.burger, .burger_trigger, .menu_mobile').click(function(){
+  $('.menu_mobile').toggleClass('menu_opened');
+})
+$(document).click(function(event) {
+    if ($(event.target).closest(".burger_trigger").length ) return;
+    $('.menu_mobile').removeClass('menu_opened');
+    event.stopPropagation();
+});
+})
+	</script>
+
+	<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu, .menu_mobile").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+             buttom = $(id).offset().buttom;
+        $('body,html').animate({scrollTop: top}, 1800);
+         $('body,html').animate({scrollButtom: buttom}, 1800);
+    });
+});
+</script>
+<script>
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	input[type='date'] {
+    -moz-appearance:textfield;
+}
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+    input[type='date'] {
+    -moz-appearance: textfield;
+}
+
+});
+</script>
+
+	<header>
+		<div class="header">
+			<div class="container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div id="menu" class="menu angelface-menu clearfix">
+								<ul class="angelface">
+									<li><a href="#">HOME</a></li>
+									<li><a href="#restaurant">RESTAURANT</a></li>
+									<li><a href="#menu-nav">MENU</a></li>
+									<li><a href="#reservation">RESERVATION</a></li>
+									<li><a href="#events">EVENTS</a></li>
+									<li><a href="#primavera">CONTACT</a></li>
+								</ul>
+							</div>
+							<div class="modal" id="modal">
+								<div class="popup">
+									<a href="" class="close">X</a>
+									<form action="/submit.php" method="POST">
+										<input name="email" placeholder="Укажите ваш Email!">
+										<input name="name" placeholder="Укажите ваше имя!">
+										<input name="phone" placeholder="Укажите ваш телефон!">
+										<textarea name="message" placeholder="Введите ваше сообщение:"></textarea>
+										<input type="submit" value="Отправить сообщение">
+									</form>
+								</div>
+							</div>
+<div class="burger"></div>
+<div class="burger_trigger">
+	<ul  id="menu" class="menu_mobile" clearfix>
+								
+									<li><a href="#">HOME</a>
+									</li>
+									<li><a href="#restaurant">RESTAURANT</a>
+									</li>
+									<li><a href="#menu">MENU</a>
+									</li>
+									<li><a href="#reservation">RESERVATION</a>
+									</li>
+									<li><a href="#events">EVENTS</a>
+									</li>
+									<li><a href="#primavera">CONTACT</a>
+									</li>
+	</ul>
+	
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+							<div class="col-sm-12">
+								<h1 class="main-logo">
+									Primavera
+								</h1>
+								<p class="logo-info"> Oriental restaurant</p>
+								<div class="col-sm-12">
+									<div class="icon-center">
+										<div class="icon clearfix">
+											<ul>
+												<li>
+													<a href="#">
+														<img src="images/facebook.png" alt="Картинка не загрузилась">
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/twitter.png" alt="Картинка не загрузилась">
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/google.png" alt="Картинка не загрузилась">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="main-logo">
+										<img src="images/main-logo.png" alt="Картинка не загрузилась">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="restaurant" class="col-md-12 col-sm-12 col-xs-12 text-center">
+					<p class="main-title">restaurant</p>
+					<img class="img-title" src="images/block2/logo.png" alt="Картинка не загрузилась">
+					<p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-xs-12 hover-cube">
+					<div class="diamont">
+						<img src="images/block2/Saucepan.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="circle-info">
+						<div class="diamont-hover">
+							<img src="images/block2/romb-red.png" alt="Картинка не загрузилась">
+							<p class="originally"> originally  <br>
+							roasted coffee</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12 hover-cube">
+					<div class="diamont">
+						<img src="images/block2/coffe.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="circle-info">
+						<div class="diamont-hover">
+							<img src="images/block2/romb-red.png" alt="">
+							<p class="originally"> originally  <br>
+							roasted coffee</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12 hover-cube">
+					<div class="diamont">
+						<img src="images/block2/pepper.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="circle-info">
+						<div class="diamont-hover">
+							<img src="images/block2/romb-red.png" alt="Картинка не загрузилась">
+							<p class="originally"> originally  <br>
+							roasted coffee</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-sm-12 col-xs-12 content-bloc">
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 eat-bloc">
+						<div class="bloc-content-right">
+							<div class="col-md-3 col-sm-12 col-xs-12 eat-sushi">
+							</div>
+							<div class="col-md-8 col-sm-12 col-xs-12 eat-crust">
+							</div>
+						</div>
+						<div class="col-md-12 col-xs-12 eat-img-bloc">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="menu-nav" class="col-md-12 col-sm-12 col-xs-12 center">
+					<p class="main-title">menu</p>
+					<img class="img-title" src="images/block2/logo.png" alt="Картинка не загрузилась">
+					<p class="info">showcase your site visitors the best menu, specialty restaurants to attract your potential customers
+					</p>
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12">
+					<div class="pictures_in_circle">
+						<img src="images/block3/Chicken.png" alt="Картинка не загрузилась">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12 ">
+					<div class="img-bloc-menu">
+						<img src="images/block3/cup.png" alt="Картинка не загрузилась">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12 ">
+					<div class="pictures_in_circle">
+						<img src="images/block3/goblet.png" alt="Картинка не загрузилась">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-12 col-xs-12 ">
+					<div class="pictures_in_circle">
+						<img src="images/block3/Bottle.png" alt="Картинка не загрузилась">
+					</div>
+				</div>
+				<div class="col-md-2  col-sm-12 col-xs-12">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5  col-sm-12 col-xs-12 info-salad">
+					<div class="col-md-5  col-sm-12 col-xs-12 salad-img">
+						<img src="images/block3/salad1.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 dotted-line">
+						<p class="name-salad">
+							Fresh salad simple
+						</p>
+						<p class="name-salad-info">
+							tomatoes,  cucumber,  fresh lettuce,  olives
+						</p>
+						<p class="old-price">
+							<s> 
+							$29,99</s>
+							<span class="new-price"> $25,99  </span>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12 info-salad">
+					<div class="col-md-5 col-sm-12 col-xs-12 salad-img">
+						<img src="images/block3/salad4.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 dotted-line">
+						<p class="name-salad">
+							Fresh salad simple
+						</p>
+						<p class="name-salad-info">
+							tomatoes,  cucumber,  fresh lettuce,  olives
+						</p>
+						<p class="old-price">
+							<s> 
+								$29,99
+							</s>
+							<span class="new-price"> $19,99  </span>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12 info-salad-two ">
+					<div class="col-md-5  col-sm-12 col-xs-12 salad-img">
+						<img src="images/block3/salad2.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12 dotted-line">
+						<p class="name-salad">
+							Fresh salad simple
+						</p>
+						<p class="name-salad-info">
+							tomatoes,  cucumber,  fresh lettuce,  olives
+						</p>
+						<p class="old-price">
+							<s> 
+								$29,99 
+							</s>
+							<span class="new-price"> $13,99  </span>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12 info-salad-two">
+					<div class="col-md-5  salad-img">
+						<img src="images/block3/salad3.png" alt="Картинка не загрузилась">
+					</div>
+					<div class="col-md-7 dotted-line">
+						<p class="name-salad">
+							Fresh salad simple
+						</p>
+						<p class="name-salad-info">
+							tomatoes,  cucumber,  fresh lettuce,  olives
+						</p>
+						<p class="old-price">
+							<s> 
+								$29,99
+							</s>
+							<span class="new-price"> $27,99  </span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 buttom-see-more">
+							<div class="up-info">
+								<a href="#" class="buttom-info"> SEE MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-reservation">
+		<div class="container">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="reservation" class="col-md-12 col-xs-12 center">
+						<p class="main-title title-color">reservation</p>
+						<p class="info info-up">quick and easy to book a table by phone or reservation form
+						</p>
+					</div>
+					<div class="col-md-12 number-num">
+						<div class="col-md-3">
+						</div>
+						<div class="col-md-2 col-xs-12 ">
+							<p class="title-number">1234.567.8910 </p>
+						</div>
+						<div class="col-md-2 col-xs-12">
+							<div class="circle-telefone-tube">
+								<a href="#">
+									<img src="images/block4/telefone.png" alt="Картинка не загрузилась">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-2 col-xs-12">
+							<p class="title-number">1234.567.8910 </p>
+						</div>
+
+						<div class="col-md-3">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 view-buttom ">
+						<input  class="view-name" value="Name">
+					</input>
+				</div>
+				<div class="col-md-4 col-xs-12 ">
+					<input type="date" id="datepicker" class=" view-name day" value="Day">
+				</input>
+			</div>
+			<div class="col-md-4 col-xs-12 ">
+				<input type="time" class="view-name hour" value="Hour">
+			</input>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="book-table">
+				BOOK TABLE
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="container">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="events" class="col-md-12">
+				<p class="main-title">ivents</p>
+				<p class="info">Present in an elegant way events in your restaurant, to encourage visitors to visit
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-xs-12 section-mounts">
+				<img src="images/block5/section-img1.png" alt="Картинка не загрузилась">
+			</div>
+			<div class="col-md-4 col-xs-12 info-block">
+				<p class="date_ivent">
+					15 february 2015
+				</p>
+				<p class="name_ivent">
+					chocolate event
+				</p>
+				<p class="info-sed">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+				</p>
+			</div>
+			<div class="col-md-4 col-xs-12 section-mounts">
+				<img src="images/block5/section-img3.png" alt="Картинка не загрузилась">
+			</div>
+			<div class="col-md-4 col-xs-12 info-bloc">
+				<p class="date_ivent">
+					25 february 2015
+				</p>
+				<p class="name_ivent">
+					wine Tasting
+				</p>
+				<p class="info-sed">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+				</p>
+			</div>
+			<div class="col-md-4 col-xs-12 section-mounts">
+				<img src="images/block5/section-img5.png" alt="Картинка не загрузилась">
+			</div>
+			<div class="col-md-4 col-xs-12 info-bloc">
+				<p class="date_ivent">
+					15 february 2015
+				</p>
+				<p class="name_ivent">
+					strawberry decoration
+				</p>
+				<p class="info-sed img-section">
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrapper-primavera">
+	<div class="wrapper-opacity">
+		<img src="images/footer/indicator-color.png" alt="Картинка не загрузилась">
+	</div>
+	<div class="google-map indicator">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d574855.7516593942!2d37.07206442310998!3d55.74928997878192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1503348893846" width="1750" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-4">
+	</div>
+</div>
+<div class="col-md-4">
+	<div id="primavera" class="primavera-section">
+		<p class="section-info"> primavera</p>
+		<p class="section-info-text">Frederic Chopin St. 454/52, 00-000 Rome
+		P. 1234.567.8910  -  1234.567.1089</p>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="menu-footer clearfix">
+						<ul>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#restaurant">RESTAURANT</a></li>
+							<li><a href="#menu">MENU</a></li>
+							<li><a href="#reservation">RESERVATION</a></li>
+							<li><a href="#events">EVENTS</a></li>
+							<li><a href="#modal">CONTACT</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 center">
+						<div class="social-icon clearfix">
+							<ul class="">
+								<li>
+									<a href="#">
+										<img src="images/footer/facebook.png" alt="Картинка не загрузилась">
+									</a></li>
+									<li><a href="#">
+										<img src="images/footer/twitter.png" alt="Картинка не загрузилась">
+									</a></li>
+									<li><a href="#">
+										<img src="images/footer/google.png" alt="Картинка не загрузилась">
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
